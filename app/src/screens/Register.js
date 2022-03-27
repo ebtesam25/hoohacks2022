@@ -2,6 +2,7 @@ import Navbar from "../components/Navbar"
 import Wallet from '../assets/wallet.svg';
 import { ethers } from "ethers";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 export default function Register() {
     const [walletAddress, setwalletAddress] = useState('')
     const _connectMetamask = async () => {
@@ -61,7 +62,7 @@ export default function Register() {
           </label>
         </div>
         <div class="form-control mt-6">
-          <button class="btn btn-primary">Register</button>
+          <Link to="/organizer"><button class="btn btn-primary">Register</button></Link>
         </div>
       </div>
     </div>

@@ -2,6 +2,7 @@ import ReactDOM from "react-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./screens/Home";
 import Login from "./screens/Login";
+import Organizer from "./screens/Organizer";
 import Register from "./screens/Register";
 
 
@@ -12,6 +13,7 @@ export default function App() {
         <Route index path="/login" element={<Login />}></Route>
         <Route  path="/register" element={<Register />}></Route>
         <Route  path="/home" element={<Home />}></Route>
+        <Route  path="/organizer" element={<Organizer />}></Route>
         
       </Routes>
     </BrowserRouter>

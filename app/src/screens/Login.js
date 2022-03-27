@@ -1,5 +1,6 @@
 import Navbar from "../components/Navbar"
-import Wallet from '../assets/wallet.svg';
+import Wallet from '../assets/wallet.svg'
+import {Link} from 'react-router-dom';
 export default function Login() {
     return(
         <>
@@ -25,7 +26,7 @@ export default function Login() {
           </label>
         </div>
         <div class="form-control mt-6">
-          <button class="btn btn-primary">Login</button>
+          <Link to="/home"><button class="btn btn-primary">Login</button></Link>
         </div>
       </div>
     </div>
